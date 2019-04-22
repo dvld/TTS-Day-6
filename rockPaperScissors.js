@@ -6,6 +6,27 @@ var rps = function () {
   var userChoice = prompt("Rock Paper Scissors Shoot!");
   userChoice = userChoice.toLowerCase();
 
+  if (userChoice === "rck" || userChoice === "roc" || userChoice === "rok") {
+    if (confirm("Did you mean 'Rock'")) {
+      userChoice = "rock";
+    }
+  }
+  if (userChoice === "papr" || userChoice === "pper" || userChoice === "paer") {
+    if (confirm("Did you mean 'Paper'")) {
+      userChoice = "paper";
+    }
+  }
+  if (userChoice === "scisors" || userChoice === "sisors" || userChoice === "sissors") {
+    if (confirm("Did you mean 'Scissors'")) {
+      userChoice = "scissors";
+    }
+  }
+
+  if (userChoice !== "rock" && userChoice !== "paper" && userChoice !== "scissors") {
+    alert("You may have missplelled that, Please enter one of the following; Rock, Paper, or Scissors");
+    rps();
+  }
+
   // console.log(userChoice);
 
   // if (computerChoice <= 3) {
