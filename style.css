@@ -7,8 +7,5 @@
 }
 
 .option:hover {
-  /* width: 205px;
-  height: 205px; */
-  /* margin-left: 30%; */
+  box-shadow: 7px 7px 120px rgb(138, 138, 138);
 }
-
