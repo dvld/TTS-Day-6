@@ -1,0 +1,13 @@
+.option {
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(34, 34, 34);
+  border-radius: 50%;
+  margin: 20% 20%;
+}
+
+.option:hover {
+  width: 205px;
+  height: 205px;
+  /* margin-left: 30%; */
+}
